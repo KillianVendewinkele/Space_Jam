@@ -1,1 +1,1 @@
-function Hey(){};sefezfdeafe
+function Hey(){};
