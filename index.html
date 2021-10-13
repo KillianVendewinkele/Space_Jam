@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/assets/img/basketball-ball.png" />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/basketball-ball.png"/>
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Cours en ligne</title>
 </head>
-
 <body>
 
     <header>
@@ -26,8 +24,10 @@
 
     </header>
 
-    <div class="search">
-        <input class="search_bar" type="search" placeholder=" 🏀 Rechercher...">
+
+    <div class="container">
+        <input class="input" id="searchInput"  type="text" placeholder=" 🏀 Rechercher un article 🏀">
+        <div id="suggestions"></div>
     </div>
 
 
@@ -51,9 +51,8 @@
                 <p class="price">9.99€</p>
             </div>
 
-            <p class="stock">10</p>
-            <input type="button" class="button" value=" 🛒 Ajouter au panier 🏀">
-
+            <p class="stock">Disponible: 10</p>
+            <input type="button" value=" 🛒 Ajouter au panier 🏀">
         </div>
 
     </div>
@@ -72,5 +71,4 @@
         <script src="assets/js/search.js"></script>
         
 </body>
-
-</html>
+</html> 
