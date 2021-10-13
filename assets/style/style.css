@@ -41,16 +41,28 @@ input[type="search"]{
 }
 
 /* ----- Barre de Recherche -----*/
-.search{
+.container{
     display: flex;
     justify-content: center;
     margin: 1%;
+    flex-direction: column;
 
 }
 
-.search_bar{
+.input{
     height: 2rem;
     width:100%;
+    border-radius: 35px;
+    border: solid red;
+}
+
+.suggestion{
+    font-size: 22px;
+
+}
+
+.suggestion:hover{
+    background-color: chocolate;
 }
 
 /* ----- Box -----*/
