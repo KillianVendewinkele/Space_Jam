@@ -139,7 +139,7 @@ height: 50px;
 
 .nodeimg{
     min-height: 10%;
-    padding-bottom: 6%;
+    padding-bottom: 9%;
 }
 
 .prices{
@@ -161,7 +161,7 @@ footer{
 @media(max-width : 1000px){
 
 input[type = button]{
-    font-size : 0.8rem ;
+    font-size : 0.5rem ;
 }
 
 }
