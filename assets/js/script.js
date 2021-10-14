@@ -28,22 +28,25 @@ for (var i = 0; i < 4; i++) {
 
 var isBasketOpen = false;  //Affichage du panier
 
-document.getElementById('button_basket').addEventListener('mouseover', openBasket);
+    document.getElementById('button_basket').addEventListener('mouseover', openBasket);
 
-function openBasket() {
-    if (isBasketOpen == false) {
-        isBasketOpen = true;
-        document.getElementById('basket').style.display = block;
+    function openBasket() {
+        if (isBasketOpen == false) {
+            isBasketOpen = true;
+            document.getElementById('basket').style.display = block;
+        }
+        else if (isBasketOpen == true) {
+            isBasketOpen = false;
+            document.getElementById('basket').style.display = none;
+        }
     }
-    else if (isBasketOpen == true) {
-        isBasketOpen = false;
-        document.getElementById('basket').style.display = none;
-    }
-}
-
-document.getElementById('basket').addEventListener('mouseleave', function () {
-    setInterval(openBasket, 2000);
-});
+    setInterval(openBasket, 2000)
+    document.getElementById('basket').addEventListener('mouseover', function () {
+        document.getElementById('basket').style.display = block ;
+    });
+    document.getElementById('basket').addEventListener('mouseleave', function () {
+        document.getElementById('basket').style.display = none ;
+    });
 
 /*
 document.getElementById("ajout").addEventListener('click', function () {
