@@ -56,4 +56,4 @@ var isBasketOpen = false;  //Affichage du panier
 document.getElementById("ajout").addEventListener('click', function () {
     clone = document.getElementById("box").cloneNode(true);
     document.getElementById("cours").appendChild(clone);
-}); */
+}); p*/
