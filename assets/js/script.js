@@ -24,8 +24,6 @@ for (var i = 0; i < 4; i++) {
     }
 }
 
-
-
 var isBasketOpen = false;  //Affichage du panier
 
     document.getElementById('button_basket').addEventListener('mouseover', openBasket);
