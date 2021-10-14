@@ -29,23 +29,27 @@ for (var i = 0; i < 4; i++) {
 var isBasketOpen = false;  //Affichage du panier
 
     document.getElementById('button_basket').addEventListener('mouseover', openBasket);
+    document.getElementById('button_basket').addEventListener('mouseleave', closeBasket);
 
     function openBasket() {
         if (isBasketOpen == false) {
             isBasketOpen = true;
-            document.getElementById('basket').style.display = block;
+            document.getElementById('basket').style.display = 'block';
         }
-        else if (isBasketOpen == true) {
+    };  
+
+    function closeBasket(){
+        if (isBasketOpen == true) {
             isBasketOpen = false;
-            document.getElementById('basket').style.display = none;
+            document.getElementById('basket').style.display = 'none';
         }
-    }
-    setInterval(openBasket, 2000)
+    };
+   
     document.getElementById('basket').addEventListener('mouseover', function () {
-        document.getElementById('basket').style.display = block ;
+        document.getElementById('basket').style.display = 'block' ;
     });
     document.getElementById('basket').addEventListener('mouseleave', function () {
-        document.getElementById('basket').style.display = none ;
+        document.getElementById('basket').style.display = 'none' ;
     });
 
 /*
