@@ -137,8 +137,8 @@ height: 50px;
     justify-content : center ;
 }
 
-.quantity{
-    width : 10% ;
+#quantity{
+    width : 15% ;
     margin-top :20px;
 }
 
